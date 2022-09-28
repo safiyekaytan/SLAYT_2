@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var n,t,elde,i,j;
+            n=5;
+            var A=[12,4,15,7,9];
+            var Y=[];
+            for(i=n-1; i>-1; i--)
+            {
+                Y[i]=1;
+            }
+
+            for(i=0; i<n; i++)
+            {
+                for(j=i+1; j<n; j++)
+                {
+
+                     if(A[j]<A[i])
+              {
+                Y[j]++;
+              }
+              else
+              {
+                Y[i]++;
+              }
+             }
+             
+            }
+
+            for(i=0;i<n;i++)
+            {
+                console.log(""+A[i]);
+            }	
+    console.log("sirasiyla");
+
+    for(i=0;i<n;i++)
+    {
+        console.log(""+Y[i]);
+         }
+
+    
+
+        </script>
+    </body>
+</html>
