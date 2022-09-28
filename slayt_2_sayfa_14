@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            //TABAN CEVİRİMİ
+            
+            var sayi,taban,kalan;
+            sayi=5;
+            taban=2;
+            var C=[];
+            var i=0;
+            while(sayi>0)
+            {
+                kalan=sayi%taban;
+                sayi/=taban;
+                C[i]=Math.floor(kalan);
+                i+=1;
+            }
+            for(i=2; i>-1; i--)
+            {
+                console.log(""+C[i]);
+            }
+
+        </script>
+    </body>
+</html>
