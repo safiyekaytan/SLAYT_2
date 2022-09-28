@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var n,s,gecici;
+            n=4;
+            var A=[1,2,3,4];
+            s=n/2;
+            var i;
+            for(i=0; i<s; i++)
+            {
+                gecici=A[i];
+                A[i]=A[n-i-1];
+                A[n-i-1]=gecici;
+            }
+            for(i=0; i<n; i++)
+            {
+                console.log(""+A[i]);
+            }
+
+        </script>
+    </body>
+</html>
