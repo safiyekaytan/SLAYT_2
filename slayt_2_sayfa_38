@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var n=6;  var m=4; var ia=0;  var ib=0;  var ic=0;
+            var A=[1,3,5,7,8,9];
+            var B=[2,6,10,13];
+            var C=[];
+            while(ia<n && ib<m)
+            {
+                if(A[ia]>B[ib])
+                {
+                    C[ic]=B[ib];
+                    ib=ib+1;
+                    ic=ic+1;
+                }
+                else
+                {
+                C[ic]=A[ia];
+                ia=ia+1;
+                ic=ic+1;
+                }
+            }
+            while(ib<m)
+            {
+                C[ic]=B[ib];
+                ib=ib+1;
+                ic=ic+1;
+
+            }
+            while(ia<n)
+            {
+                C[ic]=A[ia];
+                ia=ia+1;
+                ic=ic+1;
+            }
+            for(i=0; i<n+m; i++)
+            {
+                console.log(""+C[i]);
+            }
+        
+        </script>
+    </body>
+</html>
